@@ -1,15 +1,11 @@
+<% provide(:title, "About") %>
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SampleApp</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
   </head>
-
   <body>
     <%= yield %>
   </body>
 </html>
+
